@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "easyShop",
+  "description": "Search products with easyShop and open AI-ranked shopping results.",
+  "version": "1.0.0",
+  "icons": {
+    "16": "assets/icon-16.png",
+    "48": "assets/icon-48.png",
+    "128": "assets/icon-128.png"
+  },
+  "action": {
+    "default_title": "easyShop",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "assets/icon-16.png",
+      "48": "assets/icon-48.png",
+      "128": "assets/icon-128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["storage", "tabs"],
+  "host_permissions": ["http://localhost:4000/*", "http://127.0.0.1:4000/*"]
+}

@@ -1,0 +1,58 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Build output
+dist/
+build/
+out/
+.next/
+**/dist/
+**/build/
+**/.next/
+
+# Deployment output
+.vercel/
+**/.vercel/
+vercel.json
+**/vercel.json
+
+# Environment files
+.env
+.env.*
+**/.env
+**/.env.*
+!.env.example
+!**/.env.example
+
+# Duplicate nested app folders
+frontend/backend/
+frontend/frontend/
+frontend/extension/
+
+# Logs and runtime output
+logs/
+**/logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Test and coverage output
+coverage/
+.nyc_output/
+playwright-report/
+test-results/
+
+# Tool caches
+.vite/
+.cache/
+.parcel-cache/
+*.tsbuildinfo
+
+# Editor and OS files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

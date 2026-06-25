@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>easyShop</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="popup">
+      <header class="brand">
+        <div class="logo">
+          <img src="assets/easyshop-logo-icon.png" alt="" />
+        </div>
+        <div>
+          <h1>easyShop</h1>
+          <p>Neon price intelligence</p>
+        </div>
+      </header>
+
+      <div class="wordmark">
+        <img src="assets/easyshop-logo-wordmark.png" alt="easyShop" />
+      </div>
+
+      <form id="search-form" class="form">
+        <label for="product">Product</label>
+        <input id="product" name="product" value="hard ball bat" autocomplete="off" required />
+
+        <label for="location">Location</label>
+        <input id="location" name="location" value="Lahore" autocomplete="off" required />
+
+        <button id="submit" type="submit">Fetch Product Info</button>
+      </form>
+
+      <section class="status-card">
+        <div class="status-row">
+          <span id="status-dot" class="dot idle"></span>
+          <span id="status-text">Idle</span>
+        </div>
+        <div class="progress">
+          <span id="progress-bar"></span>
+        </div>
+      </section>
+
+      <button id="open-dashboard" class="secondary" type="button" disabled>Open dashboard</button>
+      <p id="message" class="message"></p>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
